@@ -9,42 +9,6 @@
 
     <style>
 
-      .container {
-        display: flex;
-        max-width: 600px;
-        margin: 0 auto;
-      }
-
-      .column-25 {
-        width: 25%;
-        height: auto;
-        padding: 10px;
-      }
-
-      .column-33 {
-        width: 33.3%;
-        height: auto;
-        padding: 10px;
-      }
-
-      .column-50 {
-        width: 50%;
-        height: auto;
-        padding: 10px;
-      }
-
-      .column-75 {
-        width: 75%;
-        height: auto;
-        padding: 10px;
-      }
-
-      .column-100 {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-      }
-
       .mail-body {
         font-family: sans-serif;
         font-weight: 300;
@@ -76,10 +40,11 @@
       .mail-header {
         font-weight: 900;
         font-family: sans-serif;
-        font-size: 20px;
-        text-align: right;
-        text-transform: uppercase;
-        color: #ff9900;
+        font-size: 18px;
+        text-align: left;
+        color: #ffffff;
+        padding: 0;
+        margin: 0;
       }
 
       .footer-header {
@@ -96,11 +61,17 @@
         font-weight: 300;
         font-size: 12px;
         color: #ffffff;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
       }
 
       .footer-body a {
         color: #ffffff;
-        text-decoration: underline;
+        text-decoration: none;
       }
 
       .footer-body a:hover {
@@ -110,81 +81,94 @@
 
       .footer-body a:visited {
         color: #ffffff;
-        text-decoration: underline;
+        text-decoration: none;
       }
 
       .footer-body a:active {
         color: #ffffff;
-        text-decoration: underline;
+        text-decoration: none;
+      }
+
+      table {
+        border: 0;
+      }
+
+      tr {
+        border: 0;
+      }
+
+      td {
+        border: 0;
       }
 
     </style>
 
   </head>
-  <body>
-    <div style="background: #efefef;">
+  <body style="max-width: 600px; width: 100%; margin: 0;">
 
-    <div class="container" style="background: #ff9900;">
-      <div class="column-100">
-        <p align="center">
-          <a href="https://zfb.eu/" target=_blank><img src="https://one.zfb.eu/wp-content/uploads/2020/11/cropped-logo-min.png" width="50%" height="auto"></a>
-        </p>
-      </div>
-    </div>
-
-    <div class="container" style="background: #ffffff;">
-      <div class="column-100">
-        <h1 class="mail-header">Wir würden uns <br> gerne vorstellen!</h1>
-        <p class="mail-body" align="justify"><br>
-          Sehr geehrte Damen und Herren,<br><br>
-          <b>was ist <i>ein/eine Sprinklertechniker*in®</i> und was hat das mit Ihren Kunden zu tun die einen Arbeitsplatz suchen?</b><br><br>
-          Die Lösung ist ganz einfach dazu sind wir ab sofort virtuell: <u><b>am Donnerstag den 10.12.2020 ab 10 Uhr</b></u>, findet unser virtueller Tag der offenen Tür statt.<br><br>
-          Gerne sind Sie, Ihre Kollegen, Ihr Team und auch Ihre Kunden eigeladen, sich unsere Qualifizierungsmaßnahme einmal genauer anzuschauen zu können.<br><br>
-          Die Veranstaltung werden wir in regelmäßigen Abständen wiederholen, dies jeweils <b><u>jeden 1.ten Donnerstag im Monat</b></u>.
-          Sie können sich unter folgendem Link exklusiv einwählen …. Die Veranstaltung dauert eine Stunde und startet dann stündlich immer wieder neu.<br><br>
-          Die letzte Veranstaltung wäre dann <i><u>von 15 Uhr – 16 Uhr</i></u>. Gerne stellen wir für Sie auf Wunsch Sondertermine oder andere Zeiten zur Verfügung, z.B. zu einer Teambesprechung oder ähnlichem.<br><br>
-          Somit haben Sie die Möglichkeit zu schauen, welche Zeit Ihnen am besten passt, Virtualität bedeutet für uns alle, maximale Flexibilität.<br><br>
-          Informieren Sie sich online und umfangreich, Sie werden von unserem Konzept begeistert sein.<br><br>
-          Auch Ihre Kunden qualifizieren wir gut, um diese wieder sicher in den Arbeitsmarkt zu integrieren.<br><br>
-          <b>Wir freuen uns auf Ihren virtuellen Besuch</b>, gerne auch mit vielen Fragen versehen.<br><br>
-          Rufen Sie uns auch jederzeit bei Rückfragen unter Tel.: <a href="tel:020587792160">02058-77921-60</a> an, wir können sicher alle Fragen beantworten.
-        </p>
-      </div>
-    </div>
-
-    <div class="container" style="background: #000000;">
-      <div class="column-50">
-        <h1 class="footer-header">Kontakt</h1><br>
-        <p class="footer-body">ZFB – Zentrum für Brandschutztechnik GmbH<br><br>
-        <b>Kruppstraße 41-45<br>
-        42489 Wülfrath</b><br><br>
-        Tel: <a href="tel:020587792160"><b>02058 / 77 921 – 60</b></a><br>
-        Fax: <b>02058 / 77 921 – 79</b><br>
-        E-Mail: <a href="mailto:info@zfb.eu"><b>info@zfb.eu</b></a></p>
-      </div>
-      <div class="column-50">
-        <h1 class="footer-header">Bürozeiten</h1><br>
-        <p class="footer-body">Montag – Donnerstag<br>
-        <b>07:30 – 16:30 Uhr</b><br><br>
-        Freitag<br>
-        <b>07:30 – 12:30 Uhr</b><br>
-        sowie nach Vereinbarung</p>
-      </div>
-    </div>
-
-    <div class="container" style="background: #000000;">
-      <div class="column-100">
+    <table align="center" width="100%" height="auto" bgcolor="ff9900" cellpadding="10" cellspacing="0" style="max-width: 600px; border: 0px solid;">
+      <tr><td width="60%"><h1 class="mail-header">…kommen Sie doch einfach mit uns – wir gehen mit der Zeit…</h1></td>
+        <td width="40%">
+          <p align="right">
+            <a href="https://zfb.eu/" target=_blank><img src="https://one.zfb.eu/wp-content/uploads/2020/11/cropped-logo-min.png" width="85%" height="auto"></a>
+          </p>
+      </td></tr>
+      <tr><td colspan="2" width="100%" bgcolor="efefef">
+        <p class="mail-body" align="left"><br>
+          Sehr geehrte Damen und Herren, liebe Interessierte,<br><br>
+          nehmen Sie sich doch bitte kurz die 30 Sekunden Zeit, dann wissen Sie, worum es hier geht:<br><br>Wir möchten Sie hiermit zu unserem virtuellen<br><br><b>“Tag der offenen Tür / Online“</b><br><br>einladen, in dem es darum geht, Ihnen unsere<br><br><b><u>Qualifizierungsmaßnahme zum Sprinklertechniker*in®</b></u><br><br>vorzustellen und wir so vielleicht gemeinsam dazu beitragen können, Menschen wieder oder gar erstmalig, zu einem seriösen und werthaltigen Arbeitsplatz zu verhelfen. <br><br><i>Wie soll das funktionieren?!</i><br><br><b>Am kommenden Donnerstag, den 10.12.2020 ab 10:00 Uhr</b><br><br>und danach jeweils stündlich - bis 16:00 Uhr - findet eine virtuelle Präsentation über folgenden Link statt<br><br>YouTube blablabla<br><br>wie sie Ihnen sonst vielleicht nur von Präsenz-Veranstaltungen bekannt ist.<br><br>Wir erläutern Ihnen unsere Ziele und geben Ihnen die Antworten auf folgende Fragen:<br><br>1.Sprinklertechniker*in®, was ist das und was macht er/sie?<br>2.Woraus besteht diese AZAV-zertifizierte Maßnahme?<br>3.Wer sind wir und was machen wir?<br><br>Sie haben währenddessen jederzeit die Möglichkeit, uns Ihre Fragen zu stellen, die wir entweder schon während, spätestens aber nach der Präsentation, beantworten werden.  <br><br>Wir hoffen, Sie genügend neugierig gemacht zu haben und freuen uns auf Ihren virtuellen Besuch. - Bis Donnerstag! <br><br>
+          <b><i>Ihr ZFB-Team</b></i></p>
+      </td></tr>
+      <tr><td width="50%" bgcolor="000000" valign="top">
+        <h1 class="footer-header">Kontakt</h1>
+        <p class="footer-body" style="font-size: 13px;">ZFB – Zentrum für Brandschutztechnik GmbH</p><br>
+        <table align="left" width="100%" border="0" style="border-spacing: 0;">
+          <tr><td width="10%" valign="middle"><img src="https://one.zfb.eu/wp-content/themes/zfb-eu/images/email-images/map.png" width="15" height="auto"></td>
+              <td width="90%" valign="middle">
+                <p class="footer-body" style="padding-left: 5px;">Kruppstraße 41-45<br>
+                42489 Wülfrath</p>
+              </td></tr>
+          <tr><td width="10%" valign="middle"><img src="https://one.zfb.eu/wp-content/themes/zfb-eu/images/email-images/phone.png" width="15" height="auto"></td>
+              <td width="90%" valign="middle">
+                <p class="footer-body" style="padding-left: 5px;"><a href="tel:020587792160"><b>02058 / 77 921 – 60</b></a></p>
+              </td></tr>
+          <tr><td width="10%" valign="middle"><img src="https://one.zfb.eu/wp-content/themes/zfb-eu/images/email-images/fax.png" width="15" height="auto"></td>
+              <td width="90%" valign="middle">
+                <p class="footer-body" style="padding-left: 5px;">02058 / 77 921 – 79</p>
+              </td></tr>
+          <tr><td width="10%" valign="middle"><img src="https://one.zfb.eu/wp-content/themes/zfb-eu/images/email-images/envelope.png" width="15" height="auto"></td>
+              <td width="90%" valign="middle">
+                <p class="footer-body" style="padding-left: 5px;"><a href="mailto:info@zfb.eu"><b>info@zfb.eu</b></a></p>
+              </td></tr>
+          <tr><td width="10%" valign="middle"><img src="https://one.zfb.eu/wp-content/themes/zfb-eu/images/email-images/ie.png" width="15" height="auto"></td>
+              <td width="90%" valign="middle">
+                <p class="footer-body" style="padding-left: 5px;"><a href="https://zfb.eu/" target=_blank><b>zfb.eu</b></a></p>
+              </td></tr>
+        </table>
+      </td><td width="50%" bgcolor="000000" valign="top">
+        <h1 class="footer-header">Bürozeiten</h1>
+        <table align="left" width="100%" border="0" style="border-spacing: 0;">
+          <tr><td width="10%" valign="top"><img src="https://one.zfb.eu/wp-content/themes/zfb-eu/images/email-images/clock.png" width="15" height="auto"></td>
+              <td width="90%" valign="middle">
+                <p class="footer-body" style="padding-left: 5px;">Montag – Donnerstag<br>
+                  <b>07:30 – 16:30 Uhr</b><br><br><br>
+                  Freitag<br>
+                  <b>07:30 – 12:30 Uhr</b><br>
+                  sowie nach Vereinbarung</p>
+              </td></tr>
+        </table>
+      </td></tr>
+      <tr><td colspan="2" bgcolor="000000">
         <p align="center">
           <a href="https://www.instagram.com/zentrumfuerbrandschutztechnik/" target=_blank><img src="https://one.zfb.eu/wp-content/themes/zfb-eu/images/email-images/insta.jpg"></a>
           <a href="https://www.facebook.com/brandschutzzentrum" target=_blank><img src="https://one.zfb.eu/wp-content/themes/zfb-eu/images/email-images/facebook.jpg"></a>
           <a href="https://www.youtube.com/channel/UCTgghVbgCG_D56FQTgdgD6Q" target=_blank><img src="https://one.zfb.eu/wp-content/themes/zfb-eu/images/email-images/youtube.jpg"></a>
           <a href="" target=_blank><img src="https://one.zfb.eu/wp-content/themes/zfb-eu/images/email-images/linkedid.jpg"></a>
         </p>
-        <p class="footer-body" align="center">Copyright © 2020 ZFB - Zentrum für Brandschutztechnik GmbH</p>
-      </div>
-    </div>
-
-    </div>
+        <p class="footer-body" align="center">Copyright © 2020 ZFB - Zentrum für Brandschutztechnik GmbH</p><br>
+        <p class="footer-body" align="center" style="font-size: 8px;"><a href="https://fontawesome.com/license" target=_blank>FontAwesome Icons</a></p>
+      </td></tr>
+    </table>
 
   </body>
 </html>
